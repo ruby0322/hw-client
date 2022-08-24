@@ -16,6 +16,7 @@ function Info() {
   const fetchItems = async () => {
     const data = await fetch('https://hw-platform-backend.herokuapp.com/info');
     const res = await data.json();
+    console.log(res);
     setItems(res);
   };
 
