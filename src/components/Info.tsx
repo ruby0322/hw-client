@@ -14,7 +14,7 @@ function Info() {
   const [items, setItems] = useState<itemNode[]>([]);
 
   const fetchItems = async () => {
-    const data = await fetch('/info');
+    const data = await fetch('https://hw-platform-backend.herokuapp.com/info');
     const item = await data.json();
     setItems(item);
   };
